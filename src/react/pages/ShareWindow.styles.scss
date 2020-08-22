@@ -1,0 +1,22 @@
+.ShareWindow {
+    position: relative;
+    height: 100vh;
+
+    & img {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        width: 62rem;
+    }
+
+    &__Container {
+        position: absolute;
+        bottom: 10rem;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}

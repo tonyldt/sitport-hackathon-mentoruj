@@ -1,0 +1,48 @@
+.Start {
+    z-index: 0;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 28rem 1fr 1fr;
+
+    & h1 {
+        grid-row: 2;
+        text-align: center;
+        font-size: 3.6rem;
+    }
+}
+
+.Service-Container {
+    grid-row: 4;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 19rem;
+
+    & div {
+        display: inline-block;
+        cursor: pointer;
+
+        & div {
+            display: block;
+            text-align: center;
+            font-size: 3.6rem;
+        }
+    }
+}
+
+.Service {
+    &__gm {
+        grid-column: 1;
+    }
+
+    &__MT {
+        grid-column: 2;
+    }
+
+    &__Z {
+        grid-column: 3;
+    }
+}

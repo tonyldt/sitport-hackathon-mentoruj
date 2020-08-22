@@ -1,0 +1,39 @@
+.StartLesson {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+
+    &__Container {
+        display: grid;
+        grid-template-rows: 20rem 10rem;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        transition: .5s all;
+
+        &:hover {
+            border: .5rem solid #00BFA6;
+            border-radius: 2rem;
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+            padding-right: 4rem;
+            padding-left: 4rem;
+        }
+    }
+
+    & input {
+        width: 30rem;
+        grid-row: 1;
+        outline: none;
+    }
+
+    &__Container div {
+        font-size: 3.6rem;
+        grid-row: 2;
+    }
+
+
+}
